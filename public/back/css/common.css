@@ -42,6 +42,7 @@ ul{
 }
 .mb_20 {
   margin-bottom: 20px;
+  margin-top: 70px;
 }
 
 .panel-title {
@@ -117,7 +118,7 @@ ul{
 .lt_main{
   height: 1000px;
   padding-left:180px;
-  background-color:pink;
+  /* background-color:pink; */
 }
 .lt_topbar{
   position:fixed;
@@ -139,12 +140,24 @@ ul{
 .red{
   color:#A94442;
 }
+.breadcrumb{
+  margin-top: 50px;
+  border-radius: 10px;
+  background-color: #ccc;
+}
 .echarts_left,
 .echarts_right{
   height: 400px;
   width: 48%;
-  background-color:skyblue;
+  /* background-color:skyblue; */
 }
+table th,
+table td{
+  text-align: center;
+  vertical-align: middle;
+}
+
+
 
 
 

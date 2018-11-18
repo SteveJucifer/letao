@@ -1,0 +1,46 @@
+<DOCTYPE HTML>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title></title>
+</head>
+<body>
+
+<div>
+  <button>
+    <span></span>
+    <span></span>
+  </button>
+</div>
+
+
+
+
+  <!-- 模板 -->
+<script type="text/html">
+{{each rows v i}}
+<tr>
+  <td>{{i+1+(page-1)*size}}</td>
+  <td>{{v.proName}}</td>
+  <td>{{v.proDec}}</td>
+  <td>{{v.num}}</td>
+  <td>{{v.size}}</td>
+  <td>{{ v.status === 1?"已上架":"已下架"}}</td><button></button>
+  {{if v.status===1}}
+  <td><button class="btn btn-danger">?????????????</button></td>
+  {{else}}
+  <td><button class="btn btn-default">????</button></td>
+  {{/if}}
+</tr>
+{{/each}}
+</script>
+
+<script type="text/html" id="dropdownTpl">
+  {{each rows v i}}
+  <li><a href="" data-id={{v.id}}>{{v.brandName}}</a></li>
+ 
+  {{/each}}
+
+</script>
+</body>
+</html>
